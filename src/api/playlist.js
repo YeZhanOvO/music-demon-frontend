@@ -24,3 +24,11 @@ export function update(params){
         method: 'post'
     })
 }
+
+export function del(params){
+    return request({
+        url: `${baseURL}/playlist/del`,
+        params,
+        method: 'get'
+    })
+}
